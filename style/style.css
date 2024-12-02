@@ -417,3 +417,26 @@ img{
     background-color: rgba(255, 255, 255, 0.85);
     border-radius: 8px;
 }
+
+/************************************** 
+            MOBILE SERVICES
+**************************************/
+.services h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services article{
+    border: 3px solid var(--color-pink);
+    background-color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.services p{
+    margin-bottom: 10px;
+}
+
+.services{
+    padding-bottom: 20px;
+}
