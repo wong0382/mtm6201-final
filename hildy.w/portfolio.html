@@ -8,18 +8,25 @@
     <title>My Portfolio</title>
 </head>
 <body>
-    <header role="banner">
-        <nav class="wrapper" aria-label="Main Navigation" id="Navigation">
-            <img src="../images/logo.png" alt="Hildy Wong's Website Logo" role="img" aria-label="Hildy Wong's Website Logo">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="">Search</a></li>
-            </ul>
-        </nav>
+    <header role="banner" class="top-nav">
+        <div>
+            <a href="index.html">
+                <img class="logo" src="../images/logo.png" alt="Hildy Wong's Website Logo" role="img" aria-label="Hildy Wong's Website Logo">
+            </a>
+        </div>
+        
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+                          <li><a href="about.html">About Me</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                          <li><a href="portfolio.html">Portfolio</a></li>
+                          <li><a href="services.html">Services</a></li>
+          </ul>
+        </section>
     </header>
     <div class="portfolio">
         <section class="wrapper">
