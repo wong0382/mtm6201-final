@@ -245,22 +245,29 @@ header h2 {
     color: #FFF;
     height: 75px;
     padding: 1em;
-  }
+}
   
-  .menu {
+.menu {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
+}
   
-  .menu > li {
+.menu > li {
     margin: 0 1rem;
     overflow: hidden;
-  }
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    background-color: var(--color-pink);
+    border-radius: 8px;
+}
   
-  .menu-button-container {
+.menu-button-container {
     display: none;
     height: 100%;
     width: 30px;
@@ -268,51 +275,52 @@ header h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+}
   
-  #menu-toggle {
+#menu-toggle {
     display: none;
   }
   
-  .menu-button,
-  .menu-button::before,
-  .menu-button::after {
-    display: block;
-    background-color: var(--color-blue);
-    position: absolute;
-    height: 4px;
-    width: 30px;
-    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    border-radius: 2px;
-  }
-  
-  .menu-button::before {
-    content: '';
-    margin-top: -8px;
-  }
-  
-  .menu-button::after {
-    content: '';
-    margin-top: 8px;
-  }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button::before {
-    margin-top: 0px;
-    transform: rotate(405deg);
-  }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button {
-    background: var(--color-pink);
-  }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button::after {
-    margin-top: 0px;
-    transform: rotate(-405deg);
-  }
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+display: block;
+background-color: var(--color-blue);
+position: absolute;
+height: 4px;
+width: 30px;
+transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+border-radius: 2px;
+}
+
+.menu-button::before {
+content: '';
+margin-top: -8px;
+}
+
+.menu-button::after {
+content: '';
+margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+margin-top: 0px;
+transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+background: var(--color-pink);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+margin-top: 0px;
+transform: rotate(-405deg);
+}
   
 .menu-button-container {
     display: flex;
 }
+
 .menu {
     position: absolute;
     top: 0;
@@ -323,6 +331,7 @@ header h2 {
     justify-content: center;
     align-items: center;
 }
+
 #menu-toggle ~ .menu li {
     height: 0;
     margin: 0;
@@ -330,21 +339,14 @@ header h2 {
     border: 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
+
 #menu-toggle:checked ~ .menu li {
     border: 1px solid var(--color-white);
     height: 2.5em;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
-.menu > li {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0.5em 0;
-    width: 100%;
-    background-color: var(--color-pink);
-    border-radius: 8px;
-}
+
 .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
 }
@@ -355,16 +357,9 @@ header h2 {
     font-size: 1.2rem;
 }
 
-
 /************************************** 
             MOBILE TOP IMG 
 **************************************/  
-.home-cover-img img{
-    height: 25%;
-    object-fit: cover;
-    object-position: 5% 0%;
-}
-
 .cover-img-text{
     position: absolute;
     text-align: left;
@@ -435,9 +430,9 @@ header h2 {
 }
 
 .home-my-services ul{
-    /* background-color: rgba(255, 255, 255, 0.85); */
     padding: 20px 0px;
-    margin: 0 30px;
+    margin: 0 10px;
+    list-style-position: inside
 }
 
 .home-my-services li{
@@ -445,6 +440,7 @@ header h2 {
    line-height: 1rem;
    padding: 0px 30px;
    text-align: left;
+   text-decoration: none;
 }
 
 /************************************** 
@@ -554,6 +550,12 @@ header h2 {
     width: 20px;
 }
 
+.onnect-with-me a{
+    color: var(--color-blue);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
 /************************************** 
             MOBILE PORTFOLIO
 **************************************/
@@ -567,12 +569,6 @@ header h2 {
     padding: 10px 80px;
     border-radius: 8px;
     font-size: 1.2rem;
-}
-
-.home-my-portfolio-img{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
 }
 
 .portfolio img{
@@ -642,4 +638,139 @@ header h2 {
 
 .services{
     padding-bottom: 20px;
+}
+
+/************************************** 
+************************************** 
+            TABLE STYLE
+************************************** 
+**************************************/
+@media (min-width: 768px) {
+    /* font size */
+    h1 {
+        font-size: 2.986rem;
+    }
+    
+    h2 {
+        font-size: 2.488rem;
+    }
+    
+    h3 {
+        font-size: 1.728rem;
+    }
+    
+/************************************** 
+            TABLE HOME
+**************************************/
+    .home-my-portfolio-img{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+    }
+
+    .home-my-portfolio-img img{
+        object-fit: cover;
+        border-radius: 8px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .home-treasury-technology {
+        display: none;
+    }
+
+/************************************** 
+            TABLE ABOUT ME
+**************************************/
+    .about-me-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        align-items: center; 
+        margin: 0 auto; 
+        padding: 20px;
+    }
+
+    .about-me-info div:nth-child(2) {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    .about-me img{
+        width: 100%;
+        border-radius: 8px;
+        margin: 20px auto;
+    }
+
+    .skill-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px 120px;
+        padding-left: 20px;
+        gap: 20px;
+    }
+
+    .skill-list div:nth-child(1) {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    .skill-list div:nth-child(2) {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    .skill-list li{
+        line-height: 1rem;
+    }
+
+    .professional-background h4{
+        padding: 20px;
+    }
+    /************************************** 
+            TABLE CONTACT
+    **************************************/
+    .contact .contact-header-img{
+        width: 40%;
+    }
+
+    .contact .white-bg{
+        margin: 0 120px;
+    }
+
+    .contact .contact-form {
+        width: 70%;
+        margin: 0 auto;    
+    }
+
+    .social-media{
+        color: #8bc7ae;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 150px;
+    }
+    
+    /************************************** 
+            TABLE PORTFOLIO
+    **************************************/
+    .portfolio{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin: 0 20px;
+    }
+
+    .blue-bg-title span{
+        padding: 10px 30px;
+    }
+
+    .thumbnail h5{
+        padding: 10px 30px;
+    }
+    /************************************** 
+                TABLET SERVICES
+    **************************************/
+    .services article{
+        margin: 20px 50px;
+    }
 }
