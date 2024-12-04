@@ -574,7 +574,7 @@ transform: rotate(-405deg);
 
 .blue-bg-title span{
     background-color: var(--color-blue);
-    padding: 10px 80px;
+    padding: 10px 10px;
     border-radius: 8px;
     font-size: 1.2rem;
 }
@@ -906,8 +906,8 @@ transform: rotate(-405deg);
     }
 
     .blue-bg-title span {
-        padding: 10px 10px;
-        font-size: 0.8rem;
+        padding: 10px 2px;
+        font-size: 1rem;
     }
 
     .thumbnail h5{

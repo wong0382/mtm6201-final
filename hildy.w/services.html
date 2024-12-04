@@ -1,33 +1,38 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&amp;family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">
-    <title>My Services</title>
+    <title>Home</title>
 </head>
 <body>
     <header role="banner" class="top-nav">
         <div>
-            <img class="logo" src="../images/logo.png" alt="Hildy Wong's Website Logo" role="img" aria-label="Hildy Wong's Website Logo">
+            <a href="index.html">
+                <img class="logo" src="../images/logo.png" alt="Hildy Wong's Website Logo" role="img" aria-label="Hildy Wong's Website Logo">
+            </a>
         </div>
-            <input id="menu-toggle" type="checkbox" />
-            <label class='menu-button-container' for="menu-toggle">
-            <div class='menu-button'></div>
-        </label>
-          <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-                          <li><a href="about.html">About Me</a></li>
-                          <li><a href="contact.html">Contact</a></li>
-                          <li><a href="portfolio.html">Portfolio</a></li>
-                          <li><a href="services.html">Services</a></li>
-          </ul>
-        </section>
+        <nav>
+            <div class="dropdown">
+                <input id="menu-toggle" type="checkbox">
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <div class="services">
         <h1 class="blue-text">My Services</h1>
-        <section class="wrapper">
+        <div class="wrapper">
             <article class="data-visualization-design">
                 <h3>Data Visualization Design</h3>
                 <p>Transform complex data into clear, actionable insights with custom charts, graphs, and infographics.</p>
@@ -71,6 +76,6 @@
                     <li>Video Snippets for Social Media (e.g., animated data clips for Instagram or LinkedIn)</li>
                 </ul>
             </article>
-        </section>
+        </div>
     </div>
 </body></html>

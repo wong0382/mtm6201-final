@@ -1,8 +1,11 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">
-    <title>About Me</title>
+    <title>Home</title>
 </head>
 <body class="about-me">
     <header role="banner" class="top-nav">
@@ -11,19 +14,21 @@
                 <img class="logo" src="../images/logo.png" alt="Hildy Wong's Website Logo" role="img" aria-label="Hildy Wong's Website Logo">
             </a>
         </div>
-        
-        <input id="menu-toggle" type="checkbox" />
-        <label class='menu-button-container' for="menu-toggle">
-            <div class='menu-button'></div>
-        </label>
-          <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-                          <li><a href="about.html">About Me</a></li>
-                          <li><a href="contact.html">Contact</a></li>
-                          <li><a href="portfolio.html">Portfolio</a></li>
-                          <li><a href="services.html">Services</a></li>
-          </ul>
-        </section>
+        <nav>
+            <div class="dropdown">
+                <input id="menu-toggle" type="checkbox">
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <div>
         <article class="wrapper">
