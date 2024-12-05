@@ -10,8 +10,6 @@ html{
     font-size: 14.5px; 
 }
 
-
-
 :root{
     --color-white: #ffffff;
     --color-black: #000000;
@@ -83,7 +81,7 @@ img{
 
 .white-bg{
     background-color: rgba(255, 255, 255, 0.85);
-    padding: 10px 0px;
+    padding: 10px 10px;
 }
 
 .content {
@@ -106,35 +104,35 @@ img{
     transition-duration: 0.3s;
     -webkit-transition-property: box-shadow, transform;
     transition-property: box-shadow, transform;
-  }
-  .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+}
+
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-  }
+}
 
 /* blue button */
 .button-blue {
-  /* align-items: center; */
-  background-color: var(--color-blue);
-  border: 4px solid var(--color-white);
-  border-radius: 8px;
-  box-shadow: -5px 5px var(--color-blue);
-  color: var(--color-white);
-  cursor: pointer;
-  margin: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.5rem;
-  font-weight: 600;
-  transition: 0.3s;
+    /* align-items: center; */
+    background-color: var(--color-blue);
+    border: 4px solid var(--color-white);
+    border-radius: 8px;
+    box-shadow: -5px 5px var(--color-blue);
+    color: var(--color-white);
+    cursor: pointer;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
 .button-blue:hover {
   background-color: var(--color-pink);
   color: var(--color-blue);
-  /* outline: 0; */
   font-weight: 600;
   box-shadow: -5px 5px var(--color-yellow);
   border: 4px solid var(--color-red);
@@ -143,14 +141,12 @@ img{
 
 /* white button */
 .button-white {
-    /* align-items: center; */
     background-color: var(--color-white);
     border: 4px solid var(--color-blue);
     border-radius: 8px;
     box-shadow: -5px 5px var(--color-blue);
     color: var(--color-blue);
     cursor: pointer;
-    /* padding: 10px 25px; */
     margin: 10px;
     text-align: center;
     text-decoration: none;
@@ -158,27 +154,24 @@ img{
     font-size: 1.5rem;
     font-weight: 600;
     transition: 0.3s;
-  }
+}
   
-  .button-white:hover {
-    background-color: var(--color-pink);
-    color: var(--color-blue);
-    /* outline: 0; */
-    font-weight: 600;
-    box-shadow: -5px 5px var(--color-yellow);
-    border: 4px solid var(--color-red);
-    transition: 0.3s;
-  }
+.button-white:hover {
+background-color: var(--color-pink);
+color: var(--color-blue);
+font-weight: 600;
+box-shadow: -5px 5px var(--color-yellow);
+border: 4px solid var(--color-red);
+transition: 0.3s;
+}
 
-  .button-small{
-    /* padding: 5px 10px; */
-    font-size: .8rem;
-  }
+.button-small{
+font-size: .8rem;
+}
 
-  .button-large{
-    /* padding: 10px 25px; */
-    font-size: 2rem;
-  }
+.button-large{
+font-size: 2rem;
+}
 
 /************************************** 
             FOOTER
@@ -241,14 +234,15 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 999;
+    padding: 0 20px;
 }
 
 input[type='checkbox'] {
-    display: none; /* Hide the checkbox */
+    display: none; 
 }
 
 .logo {
-    max-width: 70px; /* Adjust as needed */
+    max-width: 70px;
     height: auto;
 }
 
@@ -263,7 +257,7 @@ header nav ul {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #fff;
+    background-color: var(--color-white);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     z-index: 999;
     display: flex;
@@ -277,7 +271,7 @@ input[type='checkbox']:checked + ul {
 nav ul li {
     text-align: left;
     padding: 0.5em;
-    border-bottom: 1px solid #ccc; /* Optional: add a separator */
+    border-bottom: 1px solid var(--color-white);
 }
 
 header h2 {
@@ -291,26 +285,23 @@ header h2 {
     background: rgba(255, 255, 255, 0.85);
     color: #FFF;
     height: 75px;
-    padding: 1em;
 }
 
 .menu {
-    display: none; /* Initially hide the menu */
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  z-index: 999;
-  width: 100%;
-  padding: 10px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    width: 100%;
+    padding: 5px;
 }
 
 .menu > li {
-    margin: 0 1rem;
     display: flex;
     justify-content: center;
-    padding: 0.5em 0;
     background-color: var(--color-pink);
     border-radius: 8px;
 }
@@ -382,16 +373,12 @@ header h2 {
 .menu a {
     color: var(--color-blue);
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 100%;
 }
 
 #menu-toggle:checked ~ .menu {
-    display: block; /* Show the menu when the checkbox is checked */
-  }
-
-
-
-
+    display: block;
+}
 
 /************************************** 
             MOBILE TOP IMG 
@@ -407,23 +394,13 @@ header h2 {
     padding-left: 20px;
 }
 
-.cover-img-text .title-large{
-    font-size: 2.5rem;
-}
-
-.cover-img-text .large{
-    font-size: 2.6rem;
-}
-
 .home-welcome-text{
-    background-color: rgba(255, 255, 255, 0.85);
     margin: 20px auto;
     padding: 5px 0;
 }
 
 .home-welcome-text h2{
     padding-bottom: 15px;
-    font-size: 2rem;
 }
 
 /************************************** 
@@ -434,10 +411,6 @@ header h2 {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
-}
-
-.home-my-portfolio-header h2{
-    font-size: 2.5rem;
 }
 
 .home-my-portfolio-header a{
@@ -669,7 +642,6 @@ header h2 {
     text-align: center;
     margin: 10px 0px;
     padding: 10px 20px;
-    background-color: rgba(255, 255, 255, 0.85);
     border-radius: 8px;
 }
 
@@ -724,7 +696,18 @@ header h2 {
     h3 {
         font-size: 1.728rem;
     }
-    
+
+/************************************** 
+            TABLE DROPDOWN
+**************************************/
+    #menu-toggle:checked ~ .menu li {
+        height: 3em;
+        padding: 0.5em;
+    }
+
+    .menu a {
+        font-size: 1.5rem;
+    }
 /************************************** 
             TABLE HOME
 **************************************/
@@ -769,7 +752,6 @@ header h2 {
     
 
     .skills-specialisation h2{
-        /* padding-top: 10px; */
         margin: 0 auto;
     }
 
@@ -790,6 +772,7 @@ header h2 {
     .professional-background h4{
         padding: 20px;
     }
+
     /************************************** 
             TABLE CONTACT
     **************************************/
@@ -829,6 +812,7 @@ header h2 {
     .thumbnail h5{
         padding: 10px 30px;
     }
+
     /************************************** 
                 TABLET SERVICES
     **************************************/
@@ -882,14 +866,13 @@ header h2 {
 
     .home-my-portfolio-img {
         display: flex;
-        flex-wrap: wrap; /* Allow images to wrap to multiple lines */
-        justify-content: space-between; /* Space images evenly */
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .home-my-portfolio-img img {
-        width: 32%; /* Adjust the width as needed */
+        width: 32%; 
         height: 32%;
-        aspect-ratio: 1 / 1; /* Maintain aspect ratio */
         margin-bottom: 10px;
     }
 

@@ -13,10 +13,11 @@
     In order for me to become a better developers, I must structure my work to my liking. My work will go more smoothly in this situation. But I do enjoy a lot during the process!
 
 Also include a list of any assets or resources you used that was not your own, including any frameworks, libraries, plugins, fonts, or images.
-    1. Bootstrap
+    1. Bootstrap icon
     2. Google Font
-    3. Hover.css
+    3. Hover.css Copyright Ian Lunn 2017. Generated with Sass
     4. images from Freepik.com
+    5. Luke Embrey on fullPage.js
 
 Link to my design
 https://www.figma.com/design/Y0vxenj0hP9AdPAz1InUZG/Untitled?node-id=0-1&t=VGaA8gW5LrncbIO6-1
