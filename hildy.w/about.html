@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Home</title>
+    <title>About Me</title>
 </head>
 <body class="about-me">
     <div class="skip-links">
@@ -21,11 +21,11 @@
                 <img class="logo" src="../images/logo.png" alt="Hildy Wong's Website Logo" role="img" aria-label="Hildy Wong's Website Logo">
             </a>
         </div>
-        <nav>
+        <nav aria-label="Main Navigation">
             <div class="dropdown">
                 <input id="menu-toggle" type="checkbox">
                 <label class='menu-button-container' for="menu-toggle">
-                    <div class='menu-button'></div>
+                    <div class='menu-button' ><span></span></div>
                 </label>
                 <ul class="menu">
                     <li class="hvr-grow-shadow"><a href="index.html">Home</a></li>
@@ -39,16 +39,16 @@
     </header>
     <main class="content" role="main" id="main-content">
         <article class="wrapper">
-            <h1 class="blue-text">About Me</h1>
+            <h1 class="blue-text" role="heading">About Me</h1>
                 <div class="about-me-info white-bg">
-                    <img src="../images/hildy-event-photo.jpeg" alt="Hildy Wong attending a professional event.">
-                    <div>
+                    <img src="../images/hildy-event-photo.jpeg" alt="Hildy Wong attending a professional event." aria-label="Hildy Wong attending a professional event." role="img">
+                    <div role="article">
                         <p>Hello! I'm Hildy Wong, a designer that specialises in turning intricate data into captivating visual stories. I have an interactive media design background and am an expert in data visualisation and motion graphics, creating ideas that motivate action in addition to explaining insights.</p>
                         <br>
                         <p>I am aware of the difficulties faced by corporate e-commerce teams, HR specialists, and local marketing firms in today's data-driven world. I'm passionate about assisting you in achieving your goals of captivating your audience and effectively communicating ideas. My objective is to transform deluges of information into striking, lucid images that inspire and influence choices.</p>
                     </div>
-                    <img src="../images/hildy-photo.jpeg" alt="Hildy Wong in daily life.">
-                    <div>
+                    <img src="../images/hildy-photo.jpeg" alt="Hildy Wong in daily life." aria-label="Hildy Wong in daily life." role="img">
+                    <div role="article">
                         <p>Every project presents an opportunity to make a lasting effect. Presentations can be improved, in my opinion, by using well-designed visualisations that make your data not only comprehensible but also captivating. I'm here to work with you to make your message pop out and give your data life.</p>
                         <br>
                         <p>Together, we can unlock your data's full potential. Together, we can produce images that enthral viewers and strengthen your brand!</p>
@@ -58,25 +58,25 @@
         <div class="skillsbackground" id="skillsbackground">
             <div class="skills-specialisation">
                 <section class="wrapper blue-text">
-                    <h2>My skills and specialisation</h2>
+                    <h2 role="heading">My skills and specialisation</h2>
                     <div class="white-bg skill-list">
-                        <div>
+                        <div role="article">
                             <h3>Core Skills</h3>
-                            <ul >
-                                <li>Data Visualization</li>
-                                <li>Motion Graphics &amp; Animation</li>
-                                <li>Infographic Design</li>
-                                <li>Software Proficiency</li>
-                                <li>Video Production</li>
+                            <ul role="list">
+                                <li role="listitem">Data Visualization</li>
+                                <li role="listitem">Motion Graphics &amp; Animation</li>
+                                <li role="listitem">Infographic Design</li>
+                                <li role="listitem">Software Proficiency</li>
+                                <li role="listitem">Video Production</li>
                             </ul>
                         </div>
-                        <div>
+                        <div role="article">
                             <h3>Specialisations</h3>
-                            <ul>
-                                <li>Data-Driven Storytelling</li>
-                                <li>Interactive Visualizations</li>
-                                <li>Explainer Videos</li>
-                                <li>Branded Visuals</li>
+                            <ul role="list">
+                                <li role="listitem">Data-Driven Storytelling</li>
+                                <li role="listitem">Interactive Visualizations</li>
+                                <li role="listitem">Explainer Videos</li>
+                                <li role="listitem">Branded Visuals</li>
                             </ul>
                         </div>
                     </div>                
@@ -84,7 +84,7 @@
             </div>
             <div class="professional-background">
                 <section class="wrapper blue-text">
-                    <h2>My professional background</h2>
+                    <h2 role="heading">My professional background</h2>
                     <h4 class="white-bg">I create impactful visuals and dynamic content that simplify complex data and bring stories to life. With over 5 years of experience.</h4>
                 </section>    
             </div>

@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Home</title>
+    <title>Hildy.W Home</title>
 </head>
 <body>
     <div class="skip-links">
@@ -23,7 +23,7 @@
         </div>
         <nav aria-label="Main Navigation">
             <div class="dropdown">
-                <input id="menu-toggle" type="checkbox" aria-controls="primary-menu">
+                <input id="menu-toggle" type="checkbox">
                 <label class='menu-button-container' for="menu-toggle">
                     <div class='menu-button'></div>
                 </label>
@@ -37,7 +37,7 @@
             </div>
         </nav>
     </header>
-    <main class="content" id="main-content">
+    <main class="content" id="main-content" role="main">
         <div class="welcome">
             <div>
                 <div class="home-cover-img">
@@ -49,12 +49,12 @@
                         ../images/cover-img@2x.png 2x,
                         ../images/cover-img@3x.png 3x"
                                 media="(min-width: 768px)">
-                        <img src="../images/cover-img.png" alt="Let's Create Something Amazing Together!">
+                        <img src="../images/cover-img.png" alt="Let's Create Something Amazing Together!" role="img" aria-label="Let's Create Something Amazing Together!">
                       </picture>
                 </div>
             <div class="home-welcome-text white-bg">
-                <article class="wrapper">
-                    <h2 class="blue-text">Welcome!</h2>
+                <article class="wrapper" role="article">
+                    <h2 class="blue-text" role="heading">Welcome!</h2>
                     <p>Hi, I'm Hildy Wong, a passionate User Experience Designer specializing in data visualization and motion graphics. Here, I transform complex data into captivating visual stories that not only inform but inspire action. My mission is to make information accessible and engaging for everyone, especially for local marketing agencies, corporate e-commerce teams, and HR departments in medium-sized companies.</p>
                     <br>
                     <p>As you explore my portfolio, you'll discover a variety of projects that showcase my creative approach to data representation. I believe that well-designed visualizations can clarify insights, drive decision-making, and enhance audience engagement. Join me on this journey to unlock the potential of your data through compelling design!</p>
@@ -66,30 +66,30 @@
             <div class="home-my-portfolio">
                 <section class="wrapper">
                     <div class="home-my-portfolio-header">
-                        <h2 class="blue-text">My Portfolio</h2>
-                        <a href="portfolio.html" class="button-blue button-small hvr-grow-shadow" role="button">View All</a>
+                        <h2 class="blue-text" role="heading">My Portfolio</h2>
+                        <a href="portfolio.html" class="button-blue button-small hvr-grow-shadow" role="button" aria-label="Explore my portfolio">View All</a>
                     </div>
                     <div class="home-my-portfolio-img">
-                        <img class="home-ESG-report home-square-cover" src="../images/portfolio/Which-area-of-ESG-would-you-favour-when-investing-after-Covid-19.jpeg" alt="Which area of ESG would you favour when investing after Covid 19?">
-                        <img class="home-treasury-leaderboard home-square-cover" src="../images/portfolio/Client-Satisfaction-Index-Value-Leaderboard.jpeg" alt="Client Satisfaction Index Value Leaderboard">
-                        <img class="home-supply-chain-finance home-square-cover" src="../images/portfolio/What-makes-a-great-trade-finance-bank.jpeg" alt="What makes a great trade finance bank?">
-                        <img class="home-digital-assets home-square-cover" src="../images/portfolio/Examining-the-development-of-Asia's-high-net-worth-individuals-population.jpeg" alt="Examining the development of Asia's high-net-worth individuals population">
-                        <img class="home-treasury-report-DBS home-square-cover" src="../images/portfolio/Enhancing-treasury-operations-for-a-new-economy-company.jpeg" alt="Enhancing treasury operations for a new economy company">
-                        <img class="home-treasury-technology home-square-cover" src="../images/portfolio/How-CFOs-and-treasurers-are-approaching-technology-today.jpeg" alt="How CFOs and treasurers are approaching technology today">  
+                        <img class="home-ESG-report home-square-cover" src="../images/portfolio/Which-area-of-ESG-would-you-favour-when-investing-after-Covid-19.jpeg" alt="Which area of ESG would you favour when investing after Covid 19?" aria-label="Which area of ESG would you favour when investing after Covid 19?" role="img">
+                        <img class="home-treasury-leaderboard home-square-cover" src="../images/portfolio/Client-Satisfaction-Index-Value-Leaderboard.jpeg" alt="Client Satisfaction Index Value Leaderboard" aria-label="Client Satisfaction Index Value Leaderboard" role="img">
+                        <img class="home-supply-chain-finance home-square-cover" src="../images/portfolio/What-makes-a-great-trade-finance-bank.jpeg" alt="What makes a great trade finance bank?" aria-label="What makes a great trade finance bank?" role="img">
+                        <img class="home-digital-assets home-square-cover" src="../images/portfolio/Examining-the-development-of-Asia's-high-net-worth-individuals-population.jpeg" alt="Examining the development of Asia's high-net-worth individuals population" aria-label="Examining the development of Asia's high-net-worth individuals population" role="img">
+                        <img class="home-treasury-report-DBS home-square-cover" src="../images/portfolio/Enhancing-treasury-operations-for-a-new-economy-company.jpeg" alt="Enhancing treasury operations for a new economy company" aria-label="Enhancing treasury operations for a new economy company" role="img">
+                        <img class="home-treasury-technology home-square-cover" src="../images/portfolio/How-CFOs-and-treasurers-are-approaching-technology-today.jpeg" alt="How CFOs and treasurers are approaching technology today" aria-label="How CFOs and treasurers are approaching technology today" role="img">  
                     </div>         
                 </section>
             </div>
             <div class="home-my-services">
                 <div class="wrapper">
-                    <a href="services.html" class="button-blue button-large hvr-grow-shadow" role="button">My Services</a>
-                    <ul class="blue-text white-bg">
-                        <li>Data Visualization Design</li>
-                        <li>Animated &amp; Video-Based Data Visualizations</li>
-                        <li>Infographics for Reports &amp; Presentations</li>
-                        <li>Custom Projects &amp; Consultation</li>
-                        <li>Social Media Graphics &amp; Video Snippets</li>
+                    <a href="services.html" class="button-blue button-large hvr-grow-shadow" role="button" aria-label="Explore my services">My Services</a>
+                    <ul class="blue-text white-bg" role="list">
+                        <li role="listitem">Data Visualization Design</li>
+                        <li role="listitem">Animated &amp; Video-Based Data Visualizations</li>
+                        <li role="listitem">Infographics for Reports &amp; Presentations</li>
+                        <li role="listitem">Custom Projects &amp; Consultation</li>
+                        <li role="listitem">Social Media Graphics &amp; Video Snippets</li>
                     </ul>
-                <a href="contact.html" class="button-white button-small hvr-grow-shadow" role="button">Request a Quote</a>
+                <a href="contact.html" class="button-white button-small hvr-grow-shadow" role="button" aria-label="Contact me">Request a Quote</a>
                 </div>
             </div>
         </div>
