@@ -10,13 +10,12 @@
 </head>
 <body>
     <div class="skip-links">
-        <ul>
-          <li><a href="#Navigation">Navigation</a></li>
-          <li><a href="#what-we-offer">What We Offer</a></li>
-          <li><a href="#Menu">Menu</a></li>
-          <li><a href="#Locations">Locations</a></li>
-          <li><a href="#About-Us">About Us</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
         </ul>
     </div>
     <header role="banner" class="top-nav">
@@ -41,61 +40,64 @@
             </div>
         </nav>
     </header>
-    <div class="welcome">
-        <div>
-            <div class="home-cover-img">
-                <picture>
-                    <source srcset="../images/cover-img-small.png 1x,
-                    ../images/cover-img-medium.png 2x"
-                            media="(max-width: 767px)">
-                    <source srcset="../images/cover-img.png 1x,
-                    ../images/cover-img@2x.png 2x,
-                    ../images/cover-img@3x.png 3x"
-                            media="(min-width: 768px)">
-                    <img src="../images/cover-img.png" alt="Let's Create Something Amazing Together!" aria-hidden="true">
-                  </picture>
-            </div>
-        <div class="home-welcome-text">
-            <article class="wrapper">
-                <h2 class="blue-text">Welcome!</h2>
-                <p>Hi, I'm Hildy Wong, a passionate User Experience Designer specializing in data visualization and motion graphics. Here, I transform complex data into captivating visual stories that not only inform but inspire action. My mission is to make information accessible and engaging for everyone, especially for local marketing agencies, corporate e-commerce teams, and HR departments in medium-sized companies.</p>
-                <br>
-                <p>As you explore my portfolio, you'll discover a variety of projects that showcase my creative approach to data representation. I believe that well-designed visualizations can clarify insights, drive decision-making, and enhance audience engagement. Join me on this journey to unlock the potential of your data through compelling design!</p>
-            </article>
-        </div>
-    </div>
-    </div>
-    <div class="home-portfolio-services">
-        <div class="home-my-portfolio">
-            <section class="wrapper">
-                <div class="home-my-portfolio-header">
-                    <h2 class="blue-text">My Portfolio</h2>
-                    <a href="portfolio.html" class="button-blue button-small hvr-grow-shadow" role="button">View All</a>
+    <div class="content">
+        <div class="welcome">
+            <div>
+                <div class="home-cover-img">
+                    <picture>
+                        <source srcset="../images/cover-img-small.png 1x,
+                        ../images/cover-img-medium.png 2x"
+                                media="(max-width: 767px)">
+                        <source srcset="../images/cover-img.png 1x,
+                        ../images/cover-img@2x.png 2x,
+                        ../images/cover-img@3x.png 3x"
+                                media="(min-width: 768px)">
+                        <img src="../images/cover-img.png" alt="Let's Create Something Amazing Together!" aria-hidden="true">
+                      </picture>
                 </div>
-                <div class="home-my-portfolio-img">
-                    <img class="home-ESG-report home-square-cover" src="../images/portfolio/Which-area-of-ESG-would-you-favour-when-investing-after-Covid-19.jpeg" alt="Which area of ESG would you favour when investing after Covid 19?">
-                    <img class="home-treasury-leaderboard home-square-cover" src="../images/portfolio/Client-Satisfaction-Index-Value-Leaderboard.jpeg" alt="Client Satisfaction Index Value Leaderboard">
-                    <img class="home-supply-chain-finance home-square-cover" src="../images/portfolio/What-makes-a-great-trade-finance-bank.jpeg" alt="What makes a great trade finance bank?">
-                    <img class="home-digital-assets home-square-cover" src="../images/portfolio/Examining-the-development-of-Asia's-high-net-worth-individuals-population.jpeg" alt="Examining the development of Asia's high-net-worth individuals population">
-                    <img class="home-treasury-report-DBS home-square-cover" src="../images/portfolio/Enhancing-treasury-operations-for-a-new-economy-company.jpeg" alt="Enhancing treasury operations for a new economy company">
-                    <img class="home-treasury-technology home-square-cover" src="../images/portfolio/How-CFOs-and-treasurers-are-approaching-technology-today.jpeg" alt="How CFOs and treasurers are approaching technology today">  
-                </div>         
-            </section>
+            <div class="home-welcome-text">
+                <article class="wrapper">
+                    <h2 class="blue-text">Welcome!</h2>
+                    <p>Hi, I'm Hildy Wong, a passionate User Experience Designer specializing in data visualization and motion graphics. Here, I transform complex data into captivating visual stories that not only inform but inspire action. My mission is to make information accessible and engaging for everyone, especially for local marketing agencies, corporate e-commerce teams, and HR departments in medium-sized companies.</p>
+                    <br>
+                    <p>As you explore my portfolio, you'll discover a variety of projects that showcase my creative approach to data representation. I believe that well-designed visualizations can clarify insights, drive decision-making, and enhance audience engagement. Join me on this journey to unlock the potential of your data through compelling design!</p>
+                </article>
+            </div>
         </div>
-        <div class="home-my-services">
-            <div class="wrapper">
-                <a href="services.html" class="button-blue button-large hvr-grow-shadow" role="button">My Services</a>
-                <ul class="blue-text white-bg">
-                    <li>Data Visualization Design</li>
-                    <li>Animated &amp; Video-Based Data Visualizations</li>
-                    <li>Infographics for Reports &amp; Presentations</li>
-                    <li>Custom Projects &amp; Consultation</li>
-                    <li>Social Media Graphics &amp; Video Snippets</li>
-                </ul>
-            <a href="contact.html" class="button-white button-small hvr-grow-shadow">Request a Quote</a>
+        </div>
+        <div class="home-portfolio-services">
+            <div class="home-my-portfolio">
+                <section class="wrapper">
+                    <div class="home-my-portfolio-header">
+                        <h2 class="blue-text">My Portfolio</h2>
+                        <a href="portfolio.html" class="button-blue button-small hvr-grow-shadow" role="button">View All</a>
+                    </div>
+                    <div class="home-my-portfolio-img">
+                        <img class="home-ESG-report home-square-cover" src="../images/portfolio/Which-area-of-ESG-would-you-favour-when-investing-after-Covid-19.jpeg" alt="Which area of ESG would you favour when investing after Covid 19?">
+                        <img class="home-treasury-leaderboard home-square-cover" src="../images/portfolio/Client-Satisfaction-Index-Value-Leaderboard.jpeg" alt="Client Satisfaction Index Value Leaderboard">
+                        <img class="home-supply-chain-finance home-square-cover" src="../images/portfolio/What-makes-a-great-trade-finance-bank.jpeg" alt="What makes a great trade finance bank?">
+                        <img class="home-digital-assets home-square-cover" src="../images/portfolio/Examining-the-development-of-Asia's-high-net-worth-individuals-population.jpeg" alt="Examining the development of Asia's high-net-worth individuals population">
+                        <img class="home-treasury-report-DBS home-square-cover" src="../images/portfolio/Enhancing-treasury-operations-for-a-new-economy-company.jpeg" alt="Enhancing treasury operations for a new economy company">
+                        <img class="home-treasury-technology home-square-cover" src="../images/portfolio/How-CFOs-and-treasurers-are-approaching-technology-today.jpeg" alt="How CFOs and treasurers are approaching technology today">  
+                    </div>         
+                </section>
+            </div>
+            <div class="home-my-services">
+                <div class="wrapper">
+                    <a href="services.html" class="button-blue button-large hvr-grow-shadow" role="button">My Services</a>
+                    <ul class="blue-text white-bg">
+                        <li>Data Visualization Design</li>
+                        <li>Animated &amp; Video-Based Data Visualizations</li>
+                        <li>Infographics for Reports &amp; Presentations</li>
+                        <li>Custom Projects &amp; Consultation</li>
+                        <li>Social Media Graphics &amp; Video Snippets</li>
+                    </ul>
+                <a href="contact.html" class="button-white button-small hvr-grow-shadow">Request a Quote</a>
+                </div>
             </div>
         </div>
     </div>
+    
     <footer role="contentinfo">
         <div>
             <p>Copyright©2024</p>
