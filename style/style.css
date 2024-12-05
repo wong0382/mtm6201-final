@@ -448,7 +448,7 @@ header h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 10px;
+    gap: 2%;
 }
 
 .home-my-portfolio-img img{
