@@ -17,3 +17,6 @@ Also include a list of any assets or resources you used that was not your own, i
     2. Google Font
     3. Hover.css
     4. images from Freepik.com
+
+Link to my design
+https://www.figma.com/design/Y0vxenj0hP9AdPAz1InUZG/Untitled?node-id=0-1&t=VGaA8gW5LrncbIO6-1
