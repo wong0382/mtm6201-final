@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Home</title>
 </head>
 <body>
@@ -43,7 +44,16 @@
     <div class="welcome">
         <div>
             <div class="home-cover-img">
-                <img src="../images/cover-img.jpg" alt="Let's Create Something Amazing Together!" role="img" aria-hidden="true">
+                <picture>
+                    <source srcset="../images/cover-img-small.png 1x,
+                    ../images/cover-img-medium.png 2x"
+                            media="(max-width: 767px)">
+                    <source srcset="../images/cover-img.png 1x,
+                    ../images/cover-img@2x.png 2x,
+                    ../images/cover-img@3x.png 3x"
+                            media="(min-width: 768px)">
+                    <img src="../images/cover-img.png" alt="Let's Create Something Amazing Together!" aria-hidden="true">
+                  </picture>
             </div>
         <div class="home-welcome-text">
             <article class="wrapper">
@@ -60,7 +70,7 @@
             <section class="wrapper">
                 <div class="home-my-portfolio-header">
                     <h2 class="blue-text">My Portfolio</h2>
-                    <a href="portfolio.html" class="button-blue button-small" role="button">View All</a>
+                    <a href="portfolio.html" class="button-blue button-small hvr-grow-shadow" role="button">View All</a>
                 </div>
                 <div class="home-my-portfolio-img">
                     <img class="home-ESG-report home-square-cover" src="../images/portfolio/Which-area-of-ESG-would-you-favour-when-investing-after-Covid-19.jpeg" alt="Which area of ESG would you favour when investing after Covid 19?">
@@ -74,7 +84,7 @@
         </div>
         <div class="home-my-services">
             <div class="wrapper">
-                <a href="services.html" class="button-blue button-large" role="button">My Services</a>
+                <a href="services.html" class="button-blue button-large hvr-grow-shadow" role="button">My Services</a>
                 <ul class="blue-text white-bg">
                     <li>Data Visualization Design</li>
                     <li>Animated &amp; Video-Based Data Visualizations</li>
@@ -82,14 +92,20 @@
                     <li>Custom Projects &amp; Consultation</li>
                     <li>Social Media Graphics &amp; Video Snippets</li>
                 </ul>
-            <a href="contact.html" class="button-white button-small">Request a Quote</a>
+            <a href="contact.html" class="button-white button-small hvr-grow-shadow">Request a Quote</a>
             </div>
         </div>
     </div>
     <footer role="contentinfo">
-        <p>Copyright©2024</p>
-        <img href="" src="" alt="">
-        <img src="" alt="">
+        <div>
+            <p>Copyright©2024</p>
+        </div>
+        <div>
+            <p><a href="tel:+1234567890" target="_blank"><i class="bi bi-telephone hvr-grow-shadow"></i></a></p>
+            <p><a href="mailto:hildy@gmail" target="_blank"><i class="bi bi-envelope hvr-grow-shadow"></i></a></p>
+            <p><a href="https://www.linkedin.com/in/ho-yee-wong/" target="_blank"><i class="bi bi-linkedin hvr-grow-shadow"></i></a></p>
+            <p><a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube hvr-grow-shadow"></i></a></p>
+        </div>       
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body></html>
